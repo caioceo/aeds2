@@ -1,4 +1,4 @@
-package Pilha;
+package TADs.Pilha;
 public class PilhaLinear{
     private int arr[];
     private int topo;

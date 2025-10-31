@@ -1,4 +1,4 @@
-package BinarySearch;
+package Busca.BinarySearch;
 import java.util.Scanner;
 
 public class BinarySearch {

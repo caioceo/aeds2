@@ -1,4 +1,3 @@
-package Ordenação.SelectionSort;
 public class Selection {
     public static void main(String[] args){
         int array[] = {8,2,7,3,1,9,4,11,10, 0};

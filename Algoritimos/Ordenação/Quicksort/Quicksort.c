@@ -19,9 +19,7 @@ int partition(int a[], int esq, int dir){
         }
         i++;
         swap(a, i, j);
-
         return i;
-    
 }
 
 void quicksort(int a[], int esq, int dir){

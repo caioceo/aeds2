@@ -1,4 +1,3 @@
-package Ordenação.Quicksort;
 public class Quicksort {
     public static void main(String[] args) {
         int a[] = { 8, 2, 7, 3, 1, 9, 4, 11, 10, 0};

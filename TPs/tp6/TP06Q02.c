@@ -48,8 +48,7 @@ void formatarData(char* entrada, char* saida) {
     
     
     if (sscanf(entrada, "%s %d, %d", mes, &dia, &ano) == 3) {
-        const char* meses[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun",
-                                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+        const char* meses[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
         int numeroMes = 0;
         for (int i = 0; i < 12; i++) {
             if (strncmp(mes, meses[i], 3) == 0) {
@@ -61,8 +60,7 @@ void formatarData(char* entrada, char* saida) {
     }
     
     else if (sscanf(entrada, "%s %d", mes, &ano) == 2) {
-        const char* meses[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun",
-                                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+        const char* meses[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
         int numeroMes = 0;
         for (int i = 0; i < 12; i++) {
             if (strncmp(mes, meses[i], 3) == 0) {
@@ -72,11 +70,9 @@ void formatarData(char* entrada, char* saida) {
         }
         sprintf(saida, "01/%02d/%d", numeroMes, ano);
     }
-    // Tenta formato: "yyyy"
     else if (sscanf(entrada, "%d", &ano) == 1 && ano > 1900 && ano < 2100) {
         sprintf(saida, "01/01/%d", ano);
     }
-    // Padrão
     else {
         strcpy(saida, "01/01/1900");
     }
